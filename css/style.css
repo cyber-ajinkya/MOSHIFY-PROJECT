@@ -206,8 +206,8 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
   outline: 0;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -295,6 +295,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 3rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -652,7 +653,7 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .container {
@@ -754,6 +755,10 @@ a {
 
 /* Domain */
 
+/* .block--domain {
+  padding-bottom: 0;
+} */
+
 .block--domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
@@ -763,7 +768,7 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template: repeat(1, 6rem) / repeat(3, 1fr);
+  grid-template: repeat(2, 6rem) / repeat(2, 1fr);
   justify-items: center;
   font-size: 2rem;
   font-weight: 600;
@@ -820,6 +825,15 @@ a {
 /* Showcase Block */
 .block-showcase__image > img {
   width: 100%;
+}
+
+.block-showcase h2,
+h3 {
+  color: #fff;
+}
+
+.block-showcase p {
+  color: #777;
 }
 
 @media screen and (min-width: 768px) {
