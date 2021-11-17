@@ -523,6 +523,10 @@ a {
   padding: 3rem;
 }
 
+.testimonial__section h3 {
+  color: var(--color-headings);
+}
+
 .testimonial__image {
   position: relative;
 }
